@@ -5,19 +5,16 @@ import os
 def main():
     print("--- WhatsApp Automation Bot ---")
     
-    # Verificar existencia de archivo
     if not os.path.exists(config.CONTACTOS_FILE):
         print(f"Error: No se encontró el archivo {config.CONTACTOS_FILE}")
         print("Por favor crea el archivo 'contactos.xlsx' con las columnas: Nombre, Telefono, Mensaje, Grupo")
         return
 
-    # Pedir grupo objetivo
     grupo = input("Ingresa el nombre del Grupo a procesar (ej. Test): ").strip()
     if not grupo:
         print("Grupo no puede estar vacío.")
         return
 
-    # Iniciar Bot
     bot = WhatsAppBot()
     try:
         bot.ejecutar_campana(config.CONTACTOS_FILE, grupo)

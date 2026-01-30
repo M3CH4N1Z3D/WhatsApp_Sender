@@ -8,7 +8,7 @@ def crear_excel_prueba():
         'Mensaje': [
             'Hola {nombre}, este es un mensaje de prueba personalizado.', 
             'Saludos {nombre}, recordatorio de tu cita.', 
-            '' # Mensaje vacío para probar logica de omisión
+            '' 
         ],
         'Grupo': ['Test', 'Test', 'Test']
     }

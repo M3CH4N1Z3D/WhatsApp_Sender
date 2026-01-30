@@ -1,0 +1,5 @@
+__pycache__/
+build/
+WhatsApp_Sender_exe/
+WhatsApp_Sender.spec
+dist/
